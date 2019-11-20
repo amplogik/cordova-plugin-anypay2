@@ -19,24 +19,21 @@ I have fixed the dirs entry following the commented out one
 
 Also, note that the obsolete compile directive has been replaced by the
 correct implementation directive in the dependencies below 
-
-EDIT: reversed this, as Adobe Gradle cannot understand implementation
-
 */
-        dirs 'libs'
-//        dirs 'src/main/libs'
+        //dirs 'libs'
+        dirs 'src/main/libs'
     }
 }
 
 
 dependencies {
-    compile(name: 'anypay', ext: 'aar')
-    compile 'com.android.support:percent:25.3.1'
-    compile 'com.android.support:appcompat-v7:25.3.1'
-    compile('com.squareup.retrofit2:converter-gson:2.3.0') {
+    implementation(name: 'anypay', ext: 'aar')
+    implementation 'com.android.support:percent:25.3.1'
+    implementation 'com.android.support:appcompat-v7:25.3.1'
+    implementation('com.squareup.retrofit2:converter-gson:2.3.0') {
         exclude module: 'gson'
     }
-    compile('com.squareup.retrofit2:converter-simplexml:2.3.0') {
+    implementation('com.squareup.retrofit2:converter-simplexml:2.3.0') {
         exclude group: 'stax', module: 'stax-api'
         exclude group: 'stax', module: 'stax'
         exclude group: 'xpp3', module: 'xpp3'
