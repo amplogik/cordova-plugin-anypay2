@@ -23,8 +23,8 @@ correct implementation directive in the dependencies below
 EDIT: reversed this, as Adobe Gradle cannot understand implementation
 
 */
-//        dirs 'libs'
-        dirs 'src/main/libs'
+        dirs 'libs'
+//        dirs 'src/main/libs'
     }
 }
 
