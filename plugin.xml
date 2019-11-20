@@ -19,10 +19,12 @@
         work.   You need to use the embed directive on the framework element, but you ALSO
         require a source-file element to indicate that the framework nees to be move to lib, not libs
         this may have worked with Xcode 9 or 10, but does not work with 11 - KIM 2019-11-20
-        <framework custom="true" embed="true" src="libs/iOS/AnyPay.framework" target-dir="libs" />
         -->
+        <framework custom="true" embed="true" src="libs/iOS/AnyPay.framework" target-dir="libs" />
+        <!--
         <source-file src="src/ios/AnyPay.framework" target-dir="lib" framework="true" />
         <framework src="libs/iOS/AnyPay.framework" embed="true" custom="true" />
+        -->
          
         <!--<resource-file src="libs/ios/AnyPay.framework" target="libs/AnyPay.framework" />-->
 
